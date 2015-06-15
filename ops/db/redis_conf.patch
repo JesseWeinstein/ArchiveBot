@@ -1,0 +1,21 @@
+--- redis.conf.orig     2015-06-17 05:24:15.000000000 +0000
++++ redis.conf  2015-06-17 05:24:25.000000000 +0000
+@@ -14,7 +14,7 @@
+ 
+ # By default Redis does not run as a daemon. Use 'yes' if you need it.
+ # Note that Redis will write a pid file in /var/run/redis.pid when daemonized.
+-daemonize yes
++daemonize no
+ 
+ # When running daemonized, Redis writes a pid file in /var/run/redis.pid by
+ # default. You can specify a custom pid file location here.
+@@ -32,7 +32,7 @@
+ # Examples:
+ #
+ # bind 192.168.1.100 10.0.0.1
+-bind 127.0.0.1
++bind 0.0.0.0
+ 
+ # Specify the path for the unix socket that will be used to listen for
+ # incoming connections. There is no default, so Redis will not listen
+

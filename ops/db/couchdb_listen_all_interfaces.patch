@@ -1,0 +1,12 @@
+--- /etc/couchdb/local.ini      2015-06-15 07:22:06.000000000 +0000
++++ /etc/couchdb/local.ini.new  2015-06-15 07:22:13.000000000 +0000
+@@ -10,7 +10,7 @@
+ 
+ [httpd]
+ ;port = 5984
+-;bind_address = 127.0.0.1
++bind_address = 0.0.0.0
+ ; Options for the MochiWeb HTTP server.
+ ;server_options = [{backlog, 128}, {acceptor_pool_size, 16}]
+ ; For more socket options, consult Erlang's module 'inet' man page.
+
