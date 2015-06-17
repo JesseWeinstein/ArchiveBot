@@ -43,6 +43,3 @@ RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
 
 # The firehose ZeroMQ socket.  Used by the dashboard.
 EXPOSE 13337
-
-ADD your_key.pub /tmp/your_key.pub
-RUN cat /tmp/your_key.pub >> /root/.ssh/authorized_keys && rm -f /tmp/your_key.pub

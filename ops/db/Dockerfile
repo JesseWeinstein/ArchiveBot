@@ -70,6 +70,3 @@ EXPOSE 5984
 
 # Clean up apt-get.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-ADD your_key.pub /tmp/your_key.pub
-RUN cat /tmp/your_key.pub >> /root/.ssh/authorized_keys && rm -f /tmp/your_key.pub

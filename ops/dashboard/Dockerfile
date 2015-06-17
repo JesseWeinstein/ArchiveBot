@@ -50,6 +50,3 @@ COPY dashboard.sh /etc/service/dashboard/run
 
 # The dashboard socket.
 EXPOSE 4567
-
-ADD your_key.pub /tmp/your_key.pub
-RUN cat /tmp/your_key.pub >> /root/.ssh/authorized_keys && rm -f /tmp/your_key.pub

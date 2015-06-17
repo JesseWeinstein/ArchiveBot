@@ -35,6 +35,3 @@ RUN echo 'http://db:5984/archivebot' > /etc/container_environment/COUCHDB_URL
 # Allow SSH access to the container.
 RUN rm -f /etc/service/sshd/down
 RUN /etc/my_init.d/00_regen_ssh_host_keys.sh
-
-ADD your_key.pub /tmp/your_key.pub
-RUN cat /tmp/your_key.pub >> /root/.ssh/authorized_keys && rm -f /tmp/your_key.pub
